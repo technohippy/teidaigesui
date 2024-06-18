@@ -1,5 +1,53 @@
 <html>
 <head>
+  <!--
   <meta http-equiv="Refresh" content="0; URL=https://earth.google.com/earth/d/1QOSry3nnVOz5qF1ie87zzblexNTgWzQ3?usp=sharing" />
+  -->
+<style>
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	background-image:
+		linear-gradient(135deg,
+			rgba(255,255,255,0.9) 10%,
+			rgba(255,255,255,0.4) 15%,
+			rgba(255,255,255,0.0)
+		),
+		url("./bg.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+/*
+body:hover {
+	background-image:
+		linear-gradient(135deg,
+			rgba(255,255,255,0.0),
+			rgba(255,255,255,0.6) 85%,
+			rgba(255,255,255,0.9) 90%
+		),
+		url("./bg.svg");
+}
+*/
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+button {
+	padding-top: 25px;
+  border: none;
+	background: transparent;
+	font-weight: bold;
+	font-family: serif;
+	animation: rotate 2s linear infinite;
+}
+</style>
 </head>
+<body onClick="window.location.href = 'https://earth.google.com/earth/d/1QOSry3nnVOz5qF1ie87zzblexNTgWzQ3?usp=sharing'">
+<button>押下</button>
+</body>
 </html>
