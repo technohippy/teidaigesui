@@ -39,11 +39,31 @@ body {
   background-repeat: no-repeat;
   cursor: pointer;
 }
-@keyframes blink {
+@keyframes blink-se {
   0% {
     opacity: 0;
   }
-  50% {
+  10% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes blink-ose {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  95% {
     opacity: 1;
   }
   100% {
@@ -55,14 +75,23 @@ div {
   background: transparent;
   font-weight: bold;
   font-family: serif;
-  font-size: min(50vh, 50vw);
-  color: rgba(0,0,0,0.5);
+  font-size: min(10vh, 10vw);
+  color: rgba(255,0,0,0.8);
   text-align: center;
-  animation: blink 20s ease-in-out infinite;
+  text-shadow: rgba(0,0,0,0.8) 2px 5px;
+}
+#se {
+  animation: blink-se 5s ease-in-out infinite;
+}
+#ose {
+  animation: blink-ose 5s ease-in-out infinite;
 }
 </style>
 </head>
 <body onClick="window.location.href = 'https://earth.google.com/earth/d/1QOSry3nnVOz5qF1ie87zzblexNTgWzQ3?usp=sharing'">
-<div>押下</div>
+<div>
+  <span id="se">...せっ！</span><br>
+  <span id="ose">...押せっ！</span>
+</div>
 </body>
 </html>
