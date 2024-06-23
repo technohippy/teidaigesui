@@ -36,10 +36,16 @@ body {
   align-items: center;
   justify-content: center;
   background-image:
+    linear-gradient(155deg,
+      rgba(155,155,155,0.8) 10%,
+      rgba(50,50,50,0.8) 20%,
+      rgba(0,0,0,0.8) 30%,
+      rgba(0,0,0,0.5)
+    ),
     linear-gradient(135deg,
       rgba(255,255,255,0.8) 10%,
       rgba(0,0,0,0.8) 65%,
-      rgba(0,0,0,0.5)
+      rgba(0,0,0,0.6)
     ),
     url("./bg.svg");
   background-position: center;
@@ -101,16 +107,19 @@ nav {
   top: 0;
   right: 0;
 }
+nav {
+  margin: 1em;
+}
 nav li {
   list-style-type: none;
-  color: black;
+  color: rgba(255,255,255,0.1);
   font-weight: bold;
   font-family: serif;
   font-size: min(5vh, 5vw);
   margin: 10px;
 }
 nav li:hover {
-  color: yellow;
+  text-shadow: 0 0 3px white;
 }
 </style>
 </head>
@@ -121,8 +130,8 @@ nav li:hover {
 </button>
 <nav>
   <ul>
-    <li>使い方</li>
-    <li>クイズ</li>
+    <li onClick="window.location.href = 'https://docs.google.com/presentation/d/18ZWABmbYYOQoU293tHONb4oiN40tJZds67_P7ivqZy8/present?usp=sharing'">使い方</li>
+    <li onClick="window.location.href = 'https://docs.google.com/presentation/d/1_O5Yaq2SHmXj7jT73D_YaHxOWbvQK7UK5q297oKum0A/present?usp=sharing'">クイズ</li>
     <!--
     <li>Tシャツ</li>
     -->
