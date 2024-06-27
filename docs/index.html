@@ -90,9 +90,18 @@ button {
   text-align: center;
   text-shadow: rgba(0,0,0,0.8) 2px 5px;
   cursor: pointer;
+  transition: background 1s, color 1s;
 }
 button:hover {
   color: yellow;
+  background: radial-gradient(
+    circle at center,
+    rgba(255,255,255,0.8) 0,
+    rgba(255,255,255,0.8) 10%,
+    rgba(255,255,255,0.5) 20%,
+    rgba(255,255,255,0.3) 30%,
+    rgba(255,255,255,0) 50%);
+  font-weight: bold;
 }
 #se {
   animation: blink-se 5s ease-in-out infinite;
