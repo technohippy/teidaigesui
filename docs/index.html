@@ -52,15 +52,15 @@ body {
   justify-content: center;
   background-image:
     linear-gradient(155deg,
-      rgba(0,0,0,0.2) 10%,
-      rgba(0,0,0,0.6) 20%,
-      rgba(0,0,0,0.6) 30%,
+      rgba(0,0,0,0.1) 10%,
+      rgba(0,0,0,0.5) 20%,
+      rgba(0,0,0,0.5) 30%,
       rgba(0,0,0,0.0)
     ),
     linear-gradient(135deg,
-      rgba(0,0,0,0.4) 10%,
-      rgba(0,0,0,0.4) 65%,
-      rgba(0,0,0,0.2)
+      rgba(0,0,0,0.3) 10%,
+      rgba(0,0,0,0.3) 65%,
+      rgba(0,0,0,0.1)
     ),
     url("./background.jpg");
   background-position: right;
@@ -114,6 +114,8 @@ button {
   text-shadow: rgba(0,0,0,0.8) 2px 5px;
   cursor: pointer;
   transition: background 1s, color 1s;
+  height: 70vmin;
+  width: 70vmin;
 }
 button:hover {
   color: yellow;
@@ -143,7 +145,7 @@ nav {
 }
 nav li {
   list-style-type: none;
-  color: rgba(255,255,255,0.1);
+  color: rgba(255,255,255,0.4);
   font-weight: bold;
   font-family: serif;
   font-size: 5vmin;
@@ -157,6 +159,15 @@ nav li:hover {
 }
 #bottomnav {
   bottom: 0;
+}
+#iiinav {
+  bottom: 0;
+  right: auto;
+  left: 0;
+  text-align: left;
+}
+#iiinav li {
+  font-size: 3vmin;
 }
 </style>
 </head>
@@ -179,7 +190,12 @@ nav li:hover {
     <li onClick="window.location.href = 'https://youtu.be/ftNzxduEcys'">動画</li>
     <li onClick="window.location.href = 'https://docs.google.com/presentation/d/1_O5Yaq2SHmXj7jT73D_YaHxOWbvQK7UK5q297oKum0A/present?usp=sharing'">クイズ</li>
     <li onClick="window.location.href = 'https://photos.app.goo.gl/ED1y2kv98uuZfBWG8'">Tシャツ</li>
-    
+  </ul>
+</nav>
+<nav id="iiinav">
+  <ul>
+    <li onClick="window.location.href = 'https://www.iiiexhibition.com'">東京大学制作展</li>
+    <li onClick="window.location.href = 'https://utf.u-tokyo.ac.jp/project/pjt187'">クリエイターズ基金</li>
   </ul>
 </nav>
 </body>
